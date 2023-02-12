@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        gitlab(triggerOnMergeRequest: true)
+        github(triggerOnPush: true)
     }
     stages {
         stage('Run Python script') {
