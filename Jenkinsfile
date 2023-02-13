@@ -4,15 +4,15 @@ pipeline {
   stages {
     stage('Run python script') {
       steps {
-//             echo 'Running Python script...'
-            echo '|' cd
+            echo 'Running Python script...'
+//             echo '|' cd
             }
       }
     
-//     stage('Run Python script') {
-//       steps {
-//             sh '\Python39\python.exe main.py'
-//             }
-//         }
+    stage('Run Python script') {
+      steps {
+            sh '\Python39\python.exe main.py'
+            }
+        }
     }
 }
