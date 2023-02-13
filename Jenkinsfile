@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Run python script') {
       steps {
-            echo 'Running Python script...'
+//             echo 'Running Python script...'
             echo '|' cd
             }
       }
