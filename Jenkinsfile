@@ -11,7 +11,7 @@ pipeline {
     
     stage('Run Python script') {
       steps {
-            sh 'python main.py'
+            sh '\Python39\python.exe main.py'
             }
         }
     }
