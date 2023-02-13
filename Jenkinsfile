@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 pipeline {
   agent any
   
@@ -20,23 +19,3 @@ pipeline {
         }
     }
 }
-=======
-// pipeline {
-//   agent any
-  
-//   stages {
-//     stage('Run python script') {
-//       steps {
-//             echo 'Running Python script...'
-//             echo | cd
-//             }
-//       }
-    
-//     stage('Run Python script') {
-//       steps {
-//             sh '\Python39\python.exe main.py'
-//             }
-//         }
-//     }
-// }
->>>>>>> a3c71a02a3e8f34bffdbc10ab1d35da967f3ffe5
