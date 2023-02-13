@@ -1,6 +1,6 @@
 pipeline {
   agent any
-
+  
   stages {
     stage('Run python script') {
       steps {
@@ -8,6 +8,7 @@ pipeline {
             echo | cd
             }
       }
+    
     stage('Run Python script') {
       steps {
             sh 'python main.py'
