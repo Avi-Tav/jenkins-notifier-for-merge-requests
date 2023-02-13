@@ -14,7 +14,7 @@ pipeline {
             sh 'source venv/bin/activate'
             sh 'pip install -r requirements.txt'
             echo 'Running Python script...'
-            sh 'python main.py'
+//             sh 'python main.py'
             }
         }
     }
