@@ -12,7 +12,7 @@ pipeline {
     }
     triggers {
         git(
-            branchFilter: '*/master',
+            branchFilter: '*/main',
             pollSCM: 'H/5 * * * *'
         )
     }
