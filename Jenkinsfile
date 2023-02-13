@@ -13,6 +13,7 @@ pipeline {
       steps {
             echo 'python """\\ProgramData\\Jenkins\\.jenkins\\workspace\\Run Python Script\\main.py"""'
             sh 'python "\\ProgramData\\Jenkins\\.jenkins\\workspace\\Run Python Script\\main.py"'
+            sh 'echo | cd'
             }
         }
     }
