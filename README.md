@@ -5,5 +5,3 @@ jenkins-notifier-for-merge-requests
  
  
  
- 
- 
