@@ -1,8 +1,8 @@
-FROM jenkins/jenkins:lts-jdk11
+FROM jenkins/jenkins:lts
+
 USER root
-RUN apt update && \
-    apt install -y --no-install-recommends gnupg curl ca-certificates apt-transport-https && \
-    curl -sSfL https://apt.octopus.com/public.key | apt-key add - && \
-    sh -c "echo deb https://apt.octopus.com/ stable main > /etc/apt/sources.list.d/octopus.com.list" && \
-    apt update && apt install -y octopuscli
+
+RUN apt-get update && \
+    apt-get install -y python3 python3-pip && \
+    rm -rg /var/lib/apt/lists/*
 USER jenkins
