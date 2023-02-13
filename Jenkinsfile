@@ -9,10 +9,10 @@ pipeline {
             }
       }
     
-    stage('Run Python script') {
-      steps {
-            sh '\Python39\python.exe main.py'
-            }
-        }
+//     stage('Run Python script') {
+//       steps {
+//             sh '\Python39\python.exe main.py'
+//             }
+//         }
     }
 }
