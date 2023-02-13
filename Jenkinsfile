@@ -11,9 +11,9 @@ pipeline {
     
     stage('Run Python script') {
       steps {
-            echo 'python """\\ProgramData\\Jenkins\\.jenkins\\workspace\\Run Python Script\\main.py"""'
-            sh 'python "\\ProgramData\\Jenkins\\.jenkins\\workspace\\Run Python Script\\main.py"'
             sh 'echo | cd'
+//             echo 'python """\\ProgramData\\Jenkins\\.jenkins\\workspace\\Run Python Script\\main.py"""'
+            sh 'python """\\ProgramData\\Jenkins\\.jenkins\\workspace\\Run Python Script\\main.py"""'
             }
         }
     }
