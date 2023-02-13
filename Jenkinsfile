@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    triggers {
+        pollSCM('H/5 * * * *')
+    }
     stages {
         stage('Build') {
             steps {
@@ -9,11 +12,5 @@ pipeline {
                 sh 'python main.py'
             }
         }
-    }
-    triggers {
-        git(
-            branchFilter: '*/main',
-            pollSCM: 'H/5 * * * *'
-        )
     }
 }
